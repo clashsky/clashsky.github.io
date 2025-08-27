@@ -1,4 +1,4 @@
-# Clash天空 - 8月15日18.6M/S|免费SSR/Shadowrocket/Clash/V2ray订阅机场节点  更新时间 2025-08-15 09:57:09
+# Clash天空 - 8月27日20.7M/S|免费Clash/V2ray/SSR/Shadowrocket订阅机场节点  更新时间 2025-08-27 10:05:22
 所有免费clash节点都爬取自网络，请勿用于非法用途 。节点地址：<a href="https://clashsky.github.io" target="_blank">点击跳转</a>
 
 ## clash使用教程：
@@ -9,23 +9,23 @@
 
 ### Clash订阅链接
 
-- https://clashsky.github.io/uploads/2025/08/0-20250815.yaml
-- https://clashsky.github.io/uploads/2025/08/1-20250815.yaml
-- https://clashsky.github.io/uploads/2025/08/2-20250815.yaml
-- https://clashsky.github.io/uploads/2025/08/3-20250815.yaml
-- https://clashsky.github.io/uploads/2025/08/4-20250815.yaml
+- https://clashsky.github.io/uploads/2025/08/0-20250827.yaml
+- https://clashsky.github.io/uploads/2025/08/1-20250827.yaml
+- https://clashsky.github.io/uploads/2025/08/2-20250827.yaml
+- https://clashsky.github.io/uploads/2025/08/3-20250827.yaml
+- https://clashsky.github.io/uploads/2025/08/4-20250827.yaml
 
 ### V2ray订阅链接
 
-- https://clashsky.github.io/uploads/2025/08/0-20250815.txt
-- https://clashsky.github.io/uploads/2025/08/1-20250815.txt
-- https://clashsky.github.io/uploads/2025/08/2-20250815.txt
-- https://clashsky.github.io/uploads/2025/08/3-20250815.txt
-- https://clashsky.github.io/uploads/2025/08/4-20250815.txt
+- https://clashsky.github.io/uploads/2025/08/0-20250827.txt
+- https://clashsky.github.io/uploads/2025/08/1-20250827.txt
+- https://clashsky.github.io/uploads/2025/08/2-20250827.txt
+- https://clashsky.github.io/uploads/2025/08/3-20250827.txt
+- https://clashsky.github.io/uploads/2025/08/4-20250827.txt
 
 ### Sing-box订阅链接
 
-- https://clashsky.github.io/uploads/2025/08/20250815.json
+- https://clashsky.github.io/uploads/2025/08/20250827.json
 
 ## 更多clash节点订阅 ：
 
