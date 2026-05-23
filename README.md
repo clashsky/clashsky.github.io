@@ -1,4 +1,4 @@
-# Clash天空 - 5月16日22.3M/S|免费Singbox节点/V2ray节点/Clash节点/Shadowrocket节点/SSR节点订阅机场节点  更新时间 2026-05-16 09:30:27
+# Clash天空 - 5月23日18.9M/S|免费Singbox节点/Clash节点/Shadowrocket节点/V2ray节点/SSR节点订阅机场节点  更新时间 2026-05-23 09:45:53
 所有免费clash节点都爬取自网络，请勿用于非法用途 。节点地址：<a href="https://clashsky.github.io" target="_blank">点击跳转</a>
 
 ## clash使用教程：
@@ -9,23 +9,23 @@
 
 ### 免费Clash节点订阅链接
 
-- https://clashsky.github.io/uploads/2026/05/0-20260516.yaml
-- https://clashsky.github.io/uploads/2026/05/1-20260516.yaml
-- https://clashsky.github.io/uploads/2026/05/2-20260516.yaml
-- https://clashsky.github.io/uploads/2026/05/3-20260516.yaml
-- https://clashsky.github.io/uploads/2026/05/4-20260516.yaml
+- https://clashsky.github.io/uploads/2026/05/0-20260523.yaml
+- https://clashsky.github.io/uploads/2026/05/1-20260523.yaml
+- https://clashsky.github.io/uploads/2026/05/2-20260523.yaml
+- https://clashsky.github.io/uploads/2026/05/3-20260523.yaml
+- https://clashsky.github.io/uploads/2026/05/4-20260523.yaml
 
 ### 免费V2ray节点订阅链接
 
-- https://clashsky.github.io/uploads/2026/05/0-20260516.txt
-- https://clashsky.github.io/uploads/2026/05/1-20260516.txt
-- https://clashsky.github.io/uploads/2026/05/2-20260516.txt
-- https://clashsky.github.io/uploads/2026/05/3-20260516.txt
-- https://clashsky.github.io/uploads/2026/05/4-20260516.txt
+- https://clashsky.github.io/uploads/2026/05/0-20260523.txt
+- https://clashsky.github.io/uploads/2026/05/1-20260523.txt
+- https://clashsky.github.io/uploads/2026/05/2-20260523.txt
+- https://clashsky.github.io/uploads/2026/05/3-20260523.txt
+- https://clashsky.github.io/uploads/2026/05/4-20260523.txt
 
 ### 免费Sing-box节点订阅链接
 
-- https://clashsky.github.io/uploads/2026/05/20260516.json
+- https://clashsky.github.io/uploads/2026/05/20260523.json
 
 ## 更多Clash节点订阅 ：
 
