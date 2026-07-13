@@ -376,34 +376,14 @@ scp config.json root@192.168.1.1:/etc/v2ray/
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>VMess AEAD 加密如何保证数据安全？</h5></div>
-    <div class="panel-body">
-        AEAD 加密防止数据篡改、重放攻击和流量特征泄露。在高封锁环境下使用，可保证节点长期可用，提升数据安全和连接稳定性，同时降低被检测风险。<hr />    </div>
-</div>
-<div class="panel panel-default">
     <div class="panel-heading"><h5>Quantumult X 中自定义脚本导致规则异常，该如何恢复？</h5></div>
     <div class="panel-body">
         先停用或删除最近添加的自定义脚本，重启应用并观察网络行为是否恢复。若无法恢复，备份并重置配置为默认，然后逐个添加脚本以定位导致异常的具体脚本并修复。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>WinXray 的多策略组设置能提高访问效率吗？</h5></div>
+    <div class="panel-heading"><h5>VMess AEAD 加密如何保证数据安全？</h5></div>
     <div class="panel-body">
-        多策略组可以将节点按用途、延迟或地域分类，结合规则文件自动分流不同流量。这样可以确保游戏、视频或网页流量走最优节点，提高整体访问效率和稳定性。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Mihomo 节点分组如何自动切换最佳节点？</h5></div>
-    <div class="panel-body">
-        将节点按延迟、地区或用途分组，并启用策略组功能，系统会根据节点延迟和健康状态自动切换到最佳节点，保证网页、视频和游戏连接稳定流畅。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>如何优化 Clash DNS 解析速度？</h5></div>
-    <div class="panel-body">
-        可在配置文件中启用 fake-ip 模式或使用高质量的 DoH 服务（如 Cloudflare、AliDNS）。同时将 `fallback-filter.geoip` 设置为 true，避免国内域名被错误解析到境外，提高解析效率。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Surfboard 的规则导入失败可能是什么原因？</h5></div>
-    <div class="panel-body">
-        可能是规则格式不兼容、语法错误或策略组缺失。确保导入文件符合 Surfboard 的 YAML 规范，并检查节点或策略组是否完整，可解决导入失败问题。<hr />    </div>
+        AEAD 加密防止数据篡改、重放攻击和流量特征泄露。在高封锁环境下使用，可保证节点长期可用，提升数据安全和连接稳定性，同时降低被检测风险。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Netch 是否可以代理局域网设备？</h5></div>
@@ -411,9 +391,14 @@ scp config.json root@192.168.1.1:/etc/v2ray/
         可以。Netch 支持启用局域网共享功能，使同一网络下的其他设备通过主机的代理访问外网。需确保防火墙允许入站连接，且代理端口在局域网中开放。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Trojan 的伪装域名为何重要？</h5></div>
+    <div class="panel-heading"><h5>Surfboard 的规则导入失败可能是什么原因？</h5></div>
     <div class="panel-body">
-        伪装域名必须是真实可访问的网站，且证书有效。它用于伪装流量，使 Trojan 的数据在外观上完全像正常 HTTPS 请求，从而有效降低被封锁和 DPI 检测的风险。<hr />    </div>
+        可能是规则格式不兼容、语法错误或策略组缺失。确保导入文件符合 Surfboard 的 YAML 规范，并检查节点或策略组是否完整，可解决导入失败问题。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Mihomo 节点分组如何自动切换最佳节点？</h5></div>
+    <div class="panel-body">
+        将节点按延迟、地区或用途分组，并启用策略组功能，系统会根据节点延迟和健康状态自动切换到最佳节点，保证网页、视频和游戏连接稳定流畅。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>V2Ray QUIC 模式适合哪些网络环境？</h5></div>
@@ -423,7 +408,22 @@ scp config.json root@192.168.1.1:/etc/v2ray/
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Hysteria2 多路复用如何降低延迟？</h5></div>
     <div class="panel-body">
-        多路复用允许多个短连接共享同一通道，减少握手和加密开销，降低延迟。适用于高频短连接场景，如游戏和即时通讯，提升吞吐量和网络稳定性，保证流量快速传输。    </div>
+        多路复用允许多个短连接共享同一通道，减少握手和加密开销，降低延迟。适用于高频短连接场景，如游戏和即时通讯，提升吞吐量和网络稳定性，保证流量快速传输。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>WinXray 的多策略组设置能提高访问效率吗？</h5></div>
+    <div class="panel-body">
+        多策略组可以将节点按用途、延迟或地域分类，结合规则文件自动分流不同流量。这样可以确保游戏、视频或网页流量走最优节点，提高整体访问效率和稳定性。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>如何优化 Clash DNS 解析速度？</h5></div>
+    <div class="panel-body">
+        可在配置文件中启用 fake-ip 模式或使用高质量的 DoH 服务（如 Cloudflare、AliDNS）。同时将 `fallback-filter.geoip` 设置为 true，避免国内域名被错误解析到境外，提高解析效率。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Trojan 的伪装域名为何重要？</h5></div>
+    <div class="panel-body">
+        伪装域名必须是真实可访问的网站，且证书有效。它用于伪装流量，使 Trojan 的数据在外观上完全像正常 HTTPS 请求，从而有效降低被封锁和 DPI 检测的风险。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -453,11 +453,11 @@ scp config.json root@192.168.1.1:/etc/v2ray/
     <div class="panel-body">
         <div class="row">
             <div class="text-center">
-                <a href="javascript:;" class="js_to" data-url="https://c.kilxs.cn/?path=" data-type="Xingchen" data-code="register&code" target="_blank">
+                <a href="javascript:;" class="js_to" data-url="https://c.kilxs.cn/?path=register&code=" data-type="Xingchen" data-code="tlc6gYYx" target="_blank">
                     <img src="/assets/website/img/G/xingchen.webp" class="avatar" alt="星辰机场">
                 </a>
                 <dl>
-                    <dt><a href="javascript:;" class="js_to" data-url="https://c.kilxs.cn/?path=" data-type="Xingchen" data-code="register&code" target="_blank">星辰机场</a></dt>
+                    <dt><a href="javascript:;" class="js_to" data-url="https://c.kilxs.cn/?path=register&code=" data-type="Xingchen" data-code="tlc6gYYx" target="_blank">星辰机场</a></dt>
                     <dd>
                         <p>【包年送2个月】</p><p>1、购买入门版年付套餐额外送2个月，共14个月，只要99元！！！</p><p>2、购买“至尊天皇”年付套餐，额外送2个月，只要299元！！！</p><p>3、购买其他包月类套餐中的年付，同样送2个月！！！</p><p>错过要再等一年！！</p>                    </dd>
                 </dl>
@@ -471,16 +471,16 @@ scp config.json root@192.168.1.1:/etc/v2ray/
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2026-5-8-node-share.htm" title="Clash天空 - 5月8日19.1M/S|免费Trojan节点/Shadowrocket节点/Clash节点/Singbox节点/SSR节点/V2ray节点订阅机场节点">Clash天空 - 5月8日19.1M/S|免费Trojan节点/Shadowrocket节点/Clash节点/Singbox节点/SSR节点/V2ray节点订阅机场节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-7-1-vless-github.htm" title="Clash天空 - 7月1日19.6M/S|免费V2ray节点/Trojan节点/Clash节点/Shadowrocket节点/SSR节点/Singbox节点订阅机场节点">Clash天空 - 7月1日19.6M/S|免费V2ray节点/Trojan节点/Clash节点/Shadowrocket节点/SSR节点/Singbox节点订阅机场节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-6-4-vless-node-share.htm" title="Clash天空 - 6月4日18M/S|免费Shadowrocket节点/SSR节点/Trojan节点/Clash节点/Singbox节点/V2ray节点订阅机场节点">Clash天空 - 6月4日18M/S|免费Shadowrocket节点/SSR节点/Trojan节点/Clash节点/Singbox节点/V2ray节点订阅机场节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-6-11-free-node-subscribe-links.htm" title="Clash天空 - 6月11日21.8M/S|免费Clash节点/V2ray节点/SSR节点/Trojan节点/Singbox节点/Shadowrocket节点订阅机场节点">Clash天空 - 6月11日21.8M/S|免费Clash节点/V2ray节点/SSR节点/Trojan节点/Singbox节点/Shadowrocket节点订阅机场节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-6-17-node-share-links.htm" title="Clash天空 - 6月17日21.7M/S|免费SSR节点/Shadowrocket节点/Trojan节点/V2ray节点/Clash节点/Singbox节点订阅机场节点">Clash天空 - 6月17日21.7M/S|免费SSR节点/Shadowrocket节点/Trojan节点/V2ray节点/Clash节点/Singbox节点订阅机场节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-6-7-vless-node.htm" title="Clash天空 - 6月7日18.3M/S|免费Trojan节点/SSR节点/Singbox节点/V2ray节点/Shadowrocket节点/Clash节点订阅机场节点">Clash天空 - 6月7日18.3M/S|免费Trojan节点/SSR节点/Singbox节点/V2ray节点/Shadowrocket节点/Clash节点订阅机场节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-7-5-free-vless-node.htm" title="Clash天空 - 7月5日19M/S|免费V2ray节点/Trojan节点/SSR节点/Singbox节点/Clash节点/Shadowrocket节点订阅机场节点">Clash天空 - 7月5日19M/S|免费V2ray节点/Trojan节点/SSR节点/Singbox节点/Clash节点/Shadowrocket节点订阅机场节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-7-4-latest-vless-node.htm" title="Clash天空 - 7月4日22.2M/S|免费Shadowrocket节点/SSR节点/Clash节点/Singbox节点/Trojan节点/V2ray节点订阅机场节点">Clash天空 - 7月4日22.2M/S|免费Shadowrocket节点/SSR节点/Clash节点/Singbox节点/Trojan节点/V2ray节点订阅机场节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-6-24-vless-windows.htm" title="Clash天空 - 6月24日20.6M/S|免费Clash节点/SSR节点/Shadowrocket节点/Trojan节点/Singbox节点/V2ray节点订阅机场节点">Clash天空 - 6月24日20.6M/S|免费Clash节点/SSR节点/Shadowrocket节点/Trojan节点/Singbox节点/V2ray节点订阅机场节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-6-30-free-node-subscribe.htm" title="Clash天空 - 6月30日21.7M/S|免费V2ray节点/Trojan节点/Shadowrocket节点/SSR节点/Singbox节点/Clash节点订阅机场节点">Clash天空 - 6月30日21.7M/S|免费V2ray节点/Trojan节点/Shadowrocket节点/SSR节点/Singbox节点/Clash节点订阅机场节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-6-16-free-subscribe-node.htm" title="Clash天空 - 6月16日18.7M/S|免费Trojan节点/V2ray节点/Shadowrocket节点/Clash节点/SSR节点/Singbox节点订阅机场节点">Clash天空 - 6月16日18.7M/S|免费Trojan节点/V2ray节点/Shadowrocket节点/Clash节点/SSR节点/Singbox节点订阅机场节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-6-28-vless-node-share.htm" title="Clash天空 - 6月28日21.4M/S|免费SSR节点/Singbox节点/Clash节点/V2ray节点/Trojan节点/Shadowrocket节点订阅机场节点">Clash天空 - 6月28日21.4M/S|免费SSR节点/Singbox节点/Clash节点/V2ray节点/Trojan节点/Shadowrocket节点订阅机场节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-7-10-free-subscribe-node.htm" title="Clash天空 - 7月10日22M/S|免费Clash节点/Shadowrocket节点/V2ray节点/SSR节点/Trojan节点/Singbox节点订阅机场节点">Clash天空 - 7月10日22M/S|免费Clash节点/Shadowrocket节点/V2ray节点/SSR节点/Trojan节点/Singbox节点订阅机场节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-7-11-vless-github.htm" title="Clash天空 - 7月11日18.3M/S|免费Singbox节点/SSR节点/V2ray节点/Clash节点/Shadowrocket节点/Trojan节点订阅机场节点">Clash天空 - 7月11日18.3M/S|免费Singbox节点/SSR节点/V2ray节点/Clash节点/Shadowrocket节点/Trojan节点订阅机场节点</a><hr /></li>
                         <li class="py-2"><a href="/free-nodes/2026-7-3-vless-github.htm" title="Clash天空 - 7月3日22.4M/S|免费Singbox节点/SSR节点/Clash节点/Trojan节点/V2ray节点/Shadowrocket节点订阅机场节点">Clash天空 - 7月3日22.4M/S|免费Singbox节点/SSR节点/Clash节点/Trojan节点/V2ray节点/Shadowrocket节点订阅机场节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-6-8-vless-windows.htm" title="Clash天空 - 6月8日21.8M/S|免费SSR节点/V2ray节点/Singbox节点/Clash节点/Shadowrocket节点/Trojan节点订阅机场节点">Clash天空 - 6月8日21.8M/S|免费SSR节点/V2ray节点/Singbox节点/Clash节点/Shadowrocket节点/Trojan节点订阅机场节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-5-21-free-vless-node.htm" title="Clash天空 - 5月21日20.4M/S|免费V2ray节点/Shadowrocket节点/Singbox节点/Clash节点/SSR节点/Trojan节点订阅机场节点">Clash天空 - 5月21日20.4M/S|免费V2ray节点/Shadowrocket节点/Singbox节点/Clash节点/SSR节点/Trojan节点订阅机场节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-6-27-vless-node.htm" title="Clash天空 - 6月27日21.1M/S|免费Clash节点/Singbox节点/V2ray节点/Trojan节点/SSR节点/Shadowrocket节点订阅机场节点">Clash天空 - 6月27日21.1M/S|免费Clash节点/Singbox节点/V2ray节点/Trojan节点/SSR节点/Shadowrocket节点订阅机场节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-7-13-free-vless-node.htm" title="Clash天空 - 7月13日18.3M/S|免费SSR节点/Trojan节点/Singbox节点/Clash节点/V2ray节点/Shadowrocket节点订阅机场节点">Clash天空 - 7月13日18.3M/S|免费SSR节点/Trojan节点/Singbox节点/Clash节点/V2ray节点/Shadowrocket节点订阅机场节点</a><hr /></li>
                     </ul>
     </div>
 </div>
@@ -492,13 +492,10 @@ scp config.json root@192.168.1.1:/etc/v2ray/
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">6</span> <a href="/date/2026-07/" title="2026-07 归档">2026-07</a></h4>
+                <h4><span class="badge" style="float: right;">13</span> <a href="/date/2026-07/" title="2026-07 归档">2026-07</a></h4>
             </li>
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">30</span> <a href="/date/2026-06/" title="2026-06 归档">2026-06</a></h4>
-            </li>
-                        <li class="py-2">
-                <h4><span class="badge" style="float: right;">29</span> <a href="/date/2026-05/" title="2026-05 归档">2026-05</a></h4>
+                <h4><span class="badge" style="float: right;">23</span> <a href="/date/2026-06/" title="2026-06 归档">2026-06</a></h4>
             </li>
                     </ul>
     </div>
@@ -529,7 +526,7 @@ scp config.json root@192.168.1.1:/etc/v2ray/
                         <a href="/privacy.htm">隐私申明</a> |
                         <a href="/sitemap.xml">网站地图</a>
                     </p>
-                                        <div>特别推荐：<b><a href="javascript:;" class="js_to" data-url="https://c.kilxs.cn/?path=" data-type="Xingchen" data-code="register&code" target="_blank">星辰机场</a></b> <p>【包年送2个月】</p><p>1、购买入门版年付套餐额外送2个月，共14个月，只要99元！！！</p><p>2、购买“至尊天皇”年付套餐，额外送2个月，只要299元！！！</p><p>3、购买其他包月类套餐中的年付，同样送2个月！！！</p><p>错过要再等一年！！</p></div>
+                                        <div>特别推荐：<b><a href="javascript:;" class="js_to" data-url="https://c.kilxs.cn/?path=register&code=" data-type="Xingchen" data-code="tlc6gYYx" target="_blank">星辰机场</a></b> <p>【包年送2个月】</p><p>1、购买入门版年付套餐额外送2个月，共14个月，只要99元！！！</p><p>2、购买“至尊天皇”年付套餐，额外送2个月，只要299元！！！</p><p>3、购买其他包月类套餐中的年付，同样送2个月！！！</p><p>错过要再等一年！！</p></div>
                                                 Clash天空免费订阅中文网 版权所有 Powered by WordPress
                         </div>
                         <div class="col-md-6 text-center text-md-end">
