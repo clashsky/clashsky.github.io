@@ -317,33 +317,9 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
 <div class="clearfix"></div>
 <div class="col-md-12 mt-5">
         <p>上一个：<a href="/free-nodes/2026-8-2-node-share.htm">Clash天空 - 8月2日19.1M/S|免费Shadowrocket节点/Clash节点/Singbox节点/Trojan节点/SSR节点/V2ray节点订阅机场节点</a></p>
+        <p>下一个：<a href="/free-nodes/2026-8-4-node-share.htm">Clash天空 - 8月4日20.5M/S|免费Shadowrocket节点/SSR节点/Clash节点/V2ray节点/Trojan节点/Singbox节点订阅机场节点</a></p>
     </div>
 <h4>FAQ</h4>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Clash 如何防止规则文件冲突导致分流异常？</h5></div>
-    <div class="panel-body">
-        合理组织规则顺序，将更具体的规则放在前面，通配规则放在末尾；使用 rule-providers 分离不同来源的规则，避免重复条目，并在变更后使用日志或 debug 模式检验分流是否按预期生效。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>如何在 Windows 上用 Wireshark 分析代理流量以排查问题？</h5></div>
-    <div class="panel-body">
-        使用 Wireshark 抓取对应网卡流量，结合过滤器（例如 host <server_ip> 或 tcp.port==<port>）分析握手与数据包内容。注意 TLS/QUIC 流量为加密内容，仅能通过元信息（时延、丢包）判断异常，不要尝试解密用户隐私。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>VLESS + Reality 与 Trojan 在性能上差异大吗？</h5></div>
-    <div class="panel-body">
-        两者性能相近。VLESS + Reality 伪装更自然，适合强封锁地区；Trojan 则依托标准 TLS 实现高速连接。选择取决于服务器支持与环境稳定性。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Sing-box 如何实现精确端口分流？</h5></div>
-    <div class="panel-body">
-        Sing-box 支持按端口匹配流量，将不同类型应用流量分配到指定节点。结合策略组，可提高访问速度和网络稳定性，实现精准分流和优化用户体验。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>如何优化 Clash DNS 解析速度？</h5></div>
-    <div class="panel-body">
-        可在配置文件中启用 fake-ip 模式或使用高质量的 DoH 服务（如 Cloudflare、AliDNS）。同时将 `fallback-filter.geoip` 设置为 true，避免国内域名被错误解析到境外，提高解析效率。<hr />    </div>
-</div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Hiddify Next 如何设置流量配额限制？</h5></div>
     <div class="panel-body">
@@ -355,9 +331,29 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
         多路复用允许多个短连接共享同一通道，减少握手延迟和资源消耗。适合高频短连接场景，如游戏和即时通讯，提升吞吐量和连接稳定性，优化网络体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
+    <div class="panel-heading"><h5>WinXray 的本地 PAC 模式与全局模式有什么区别？</h5></div>
+    <div class="panel-body">
+        PAC 模式通过规则文件自动判定哪些域名走代理，能兼顾速度与便利；全局模式则所有流量都通过代理，适合调试或访问被完全屏蔽的网络。两者可在界面一键切换，根据需求灵活选择。<hr />    </div>
+</div>
+<div class="panel panel-default">
     <div class="panel-heading"><h5>Trojan-go 与原版 Trojan 有什么不同？</h5></div>
     <div class="panel-body">
         Trojan-go 在原版 Trojan 基础上扩展了多协议支持、WebSocket、gRPC、mux 多路复用等特性，同时优化性能并支持更丰富的客户端。相比原版，它更灵活，适合高级用户或多平台部署需求。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Clash 如何防止规则文件冲突导致分流异常？</h5></div>
+    <div class="panel-body">
+        合理组织规则顺序，将更具体的规则放在前面，通配规则放在末尾；使用 rule-providers 分离不同来源的规则，避免重复条目，并在变更后使用日志或 debug 模式检验分流是否按预期生效。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>VLESS + Reality 与 Trojan 在性能上差异大吗？</h5></div>
+    <div class="panel-body">
+        两者性能相近。VLESS + Reality 伪装更自然，适合强封锁地区；Trojan 则依托标准 TLS 实现高速连接。选择取决于服务器支持与环境稳定性。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>如何在 Windows 上用 Wireshark 分析代理流量以排查问题？</h5></div>
+    <div class="panel-body">
+        使用 Wireshark 抓取对应网卡流量，结合过滤器（例如 host <server_ip> 或 tcp.port==<port>）分析握手与数据包内容。注意 TLS/QUIC 流量为加密内容，仅能通过元信息（时延、丢包）判断异常，不要尝试解密用户隐私。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>V2Ray 如何使用 WebSocket 传输？</h5></div>
@@ -365,9 +361,14 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
         在 V2Ray 配置文件中将传输方式设置为 ws，即启用 WebSocket 模式。结合 CDN 和 TLS，可实现安全高速的代理链路。WebSocket 常用于伪装成 HTTPS 流量，从而降低被识别风险。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>WinXray 的本地 PAC 模式与全局模式有什么区别？</h5></div>
+    <div class="panel-heading"><h5>Sing-box 如何实现精确端口分流？</h5></div>
     <div class="panel-body">
-        PAC 模式通过规则文件自动判定哪些域名走代理，能兼顾速度与便利；全局模式则所有流量都通过代理，适合调试或访问被完全屏蔽的网络。两者可在界面一键切换，根据需求灵活选择。    </div>
+        Sing-box 支持按端口匹配流量，将不同类型应用流量分配到指定节点。结合策略组，可提高访问速度和网络稳定性，实现精准分流和优化用户体验。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>如何优化 Clash DNS 解析速度？</h5></div>
+    <div class="panel-body">
+        可在配置文件中启用 fake-ip 模式或使用高质量的 DoH 服务（如 Cloudflare、AliDNS）。同时将 `fallback-filter.geoip` 设置为 true，避免国内域名被错误解析到境外，提高解析效率。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -415,16 +416,16 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2026-7-10-free-subscribe-node.htm" title="Clash天空 - 7月10日22M/S|免费Clash节点/Shadowrocket节点/V2ray节点/SSR节点/Trojan节点/Singbox节点订阅机场节点">Clash天空 - 7月10日22M/S|免费Clash节点/Shadowrocket节点/V2ray节点/SSR节点/Trojan节点/Singbox节点订阅机场节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-6-11-free-node-subscribe-links.htm" title="Clash天空 - 6月11日21.8M/S|免费Clash节点/V2ray节点/SSR节点/Trojan节点/Singbox节点/Shadowrocket节点订阅机场节点">Clash天空 - 6月11日21.8M/S|免费Clash节点/V2ray节点/SSR节点/Trojan节点/Singbox节点/Shadowrocket节点订阅机场节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-6-29-node-share-links.htm" title="Clash天空 - 6月29日18M/S|免费V2ray节点/Singbox节点/Trojan节点/SSR节点/Clash节点/Shadowrocket节点订阅机场节点">Clash天空 - 6月29日18M/S|免费V2ray节点/Singbox节点/Trojan节点/SSR节点/Clash节点/Shadowrocket节点订阅机场节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-6-14-node-share.htm" title="Clash天空 - 6月14日22.5M/S|免费V2ray节点/Clash节点/Shadowrocket节点/Singbox节点/SSR节点/Trojan节点订阅机场节点">Clash天空 - 6月14日22.5M/S|免费V2ray节点/Clash节点/Shadowrocket节点/Singbox节点/SSR节点/Trojan节点订阅机场节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-7-13-free-vless-node.htm" title="Clash天空 - 7月13日18.3M/S|免费SSR节点/Trojan节点/Singbox节点/Clash节点/V2ray节点/Shadowrocket节点订阅机场节点">Clash天空 - 7月13日18.3M/S|免费SSR节点/Trojan节点/Singbox节点/Clash节点/V2ray节点/Shadowrocket节点订阅机场节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-7-17-free-vless-node.htm" title="Clash天空 - 7月17日20.9M/S|免费Shadowrocket节点/Clash节点/Singbox节点/Trojan节点/V2ray节点/SSR节点订阅机场节点">Clash天空 - 7月17日20.9M/S|免费Shadowrocket节点/Clash节点/Singbox节点/Trojan节点/V2ray节点/SSR节点订阅机场节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-7-5-free-vless-node.htm" title="Clash天空 - 7月5日19M/S|免费V2ray节点/Trojan节点/SSR节点/Singbox节点/Clash节点/Shadowrocket节点订阅机场节点">Clash天空 - 7月5日19M/S|免费V2ray节点/Trojan节点/SSR节点/Singbox节点/Clash节点/Shadowrocket节点订阅机场节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/node-share-links-2026-7-29.htm" title="Clash天空 - 7月29日19.3M/S|免费Shadowrocket节点/V2ray节点/Trojan节点/SSR节点/Clash节点/Singbox节点订阅机场节点">Clash天空 - 7月29日19.3M/S|免费Shadowrocket节点/V2ray节点/Trojan节点/SSR节点/Clash节点/Singbox节点订阅机场节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-6-13-vless-github.htm" title="Clash天空 - 6月13日20.4M/S|免费Clash节点/Trojan节点/SSR节点/V2ray节点/Singbox节点/Shadowrocket节点订阅机场节点">Clash天空 - 6月13日20.4M/S|免费Clash节点/Trojan节点/SSR节点/V2ray节点/Singbox节点/Shadowrocket节点订阅机场节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-7-19-free-node-subscribe-links.htm" title="Clash天空 - 7月19日18.7M/S|免费SSR节点/V2ray节点/Shadowrocket节点/Clash节点/Singbox节点/Trojan节点订阅机场节点">Clash天空 - 7月19日18.7M/S|免费SSR节点/V2ray节点/Shadowrocket节点/Clash节点/Singbox节点/Trojan节点订阅机场节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-7-30-vless-node-github.htm" title="Clash天空 - 7月30日21.8M/S|免费Singbox节点/V2ray节点/Clash节点/Trojan节点/SSR节点/Shadowrocket节点订阅机场节点">Clash天空 - 7月30日21.8M/S|免费Singbox节点/V2ray节点/Clash节点/Trojan节点/SSR节点/Shadowrocket节点订阅机场节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-7-4-latest-vless-node.htm" title="Clash天空 - 7月4日22.2M/S|免费Shadowrocket节点/SSR节点/Clash节点/Singbox节点/Trojan节点/V2ray节点订阅机场节点">Clash天空 - 7月4日22.2M/S|免费Shadowrocket节点/SSR节点/Clash节点/Singbox节点/Trojan节点/V2ray节点订阅机场节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-7-3-vless-github.htm" title="Clash天空 - 7月3日22.4M/S|免费Singbox节点/SSR节点/Clash节点/Trojan节点/V2ray节点/Shadowrocket节点订阅机场节点">Clash天空 - 7月3日22.4M/S|免费Singbox节点/SSR节点/Clash节点/Trojan节点/V2ray节点/Shadowrocket节点订阅机场节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-7-15-vless-github.htm" title="Clash天空 - 7月15日20M/S|免费V2ray节点/Singbox节点/Shadowrocket节点/Trojan节点/Clash节点/SSR节点订阅机场节点">Clash天空 - 7月15日20M/S|免费V2ray节点/Singbox节点/Shadowrocket节点/Trojan节点/Clash节点/SSR节点订阅机场节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-6-21-vless-github.htm" title="Clash天空 - 6月21日22.5M/S|免费SSR节点/Singbox节点/Clash节点/Trojan节点/V2ray节点/Shadowrocket节点订阅机场节点">Clash天空 - 6月21日22.5M/S|免费SSR节点/Singbox节点/Clash节点/Trojan节点/V2ray节点/Shadowrocket节点订阅机场节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-6-18-free-node-subscribe.htm" title="Clash天空 - 6月18日19.6M/S|免费Trojan节点/Clash节点/SSR节点/Shadowrocket节点/Singbox节点/V2ray节点订阅机场节点">Clash天空 - 6月18日19.6M/S|免费Trojan节点/Clash节点/SSR节点/Shadowrocket节点/Singbox节点/V2ray节点订阅机场节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/today-vless-node-2026-8-5.htm" title="Clash天空 - 8月5日19.9M/S|免费V2ray节点/Clash节点/SSR节点/Singbox节点/Shadowrocket节点/Trojan节点订阅机场节点">Clash天空 - 8月5日19.9M/S|免费V2ray节点/Clash节点/SSR节点/Singbox节点/Shadowrocket节点/Trojan节点订阅机场节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-7-23-today-vless-node.htm" title="Clash天空 - 7月23日20M/S|免费V2ray节点/Trojan节点/SSR节点/Singbox节点/Clash节点/Shadowrocket节点订阅机场节点">Clash天空 - 7月23日20M/S|免费V2ray节点/Trojan节点/SSR节点/Singbox节点/Clash节点/Shadowrocket节点订阅机场节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-6-30-free-node-subscribe.htm" title="Clash天空 - 6月30日21.7M/S|免费V2ray节点/Trojan节点/Shadowrocket节点/SSR节点/Singbox节点/Clash节点订阅机场节点">Clash天空 - 6月30日21.7M/S|免费V2ray节点/Trojan节点/Shadowrocket节点/SSR节点/Singbox节点/Clash节点订阅机场节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-2-node-share.htm" title="Clash天空 - 8月2日19.1M/S|免费Shadowrocket节点/Clash节点/Singbox节点/Trojan节点/SSR节点/V2ray节点订阅机场节点">Clash天空 - 8月2日19.1M/S|免费Shadowrocket节点/Clash节点/Singbox节点/Trojan节点/SSR节点/V2ray节点订阅机场节点</a><hr /></li>
                     </ul>
     </div>
 </div>
@@ -436,7 +437,7 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">3</span> <a href="/date/2026-08/" title="2026-08 归档">2026-08</a></h4>
+                <h4><span class="badge" style="float: right;">10</span> <a href="/date/2026-08/" title="2026-08 归档">2026-08</a></h4>
             </li>
                         <li class="py-2">
                 <h4><span class="badge" style="float: right;">31</span> <a href="/date/2026-07/" title="2026-07 归档">2026-07</a></h4>
